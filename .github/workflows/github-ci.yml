@@ -36,7 +36,7 @@ jobs:
             docker tag gic-dx-its-mgt-backend-employees:$IMAGE_TAG ${{ vars.ECR_REPOSITORY }}employees:${DOCKER_TAG}
             docker tag gic-dx-its-mgt-backend-employees:$IMAGE_TAG ${{ vars.ECR_REPOSITORY }}employees:$IMAGE_TAG
 
-            docker build -t gic-dx-its-mgt-backend--employees-japan:$IMAGE_TAG .
+            docker build -t gic-dx-its-mgt-backend-employees-japan:$IMAGE_TAG .
             docker tag gic-dx-its-mgt-backend-employees-japan:$IMAGE_TAG ${{ vars.ECR_REPOSITORY }}employees-japan:${DOCKER_TAG}
             docker tag gic-dx-its-mgt-backend-employees-japan:$IMAGE_TAG ${{ vars.ECR_REPOSITORY }}employees-japan:$IMAGE_TAG
 
